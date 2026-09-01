@@ -172,9 +172,10 @@ footer>div { display:flex; gap:22px; align-items:center; }
 .phone:before { content:""; position:absolute; top:8px; left:50%; transform:translateX(-50%); width:90px; height:21px; background:#071019; border-radius:14px; z-index:3; }
 .phone-front { left:9%; transform:rotate(-4deg); }
 .phone-back { right:-2%; top:35px; transform:rotate(8deg); opacity:.72; }
-.phone-real { padding:0; overflow:hidden; background:#102F55; }
-.phone-real:before { display:none; }
-.phone-real>img { width:100%; height:100%; display:block; object-fit:cover; object-position:top center; border-radius:35px; }
+.phone-real { padding:8px; overflow:hidden; background:#172b3c; border:7px solid #263b4c; }
+.phone-real:before { display:block; top:9px; width:92px; height:22px; z-index:5; background:#07111e; box-shadow:0 1px 0 #ffffff0d; }
+.phone-real:after { content:""; position:absolute; inset:8px; z-index:4; border:1px solid #ffffff12; border-radius:29px; pointer-events:none; }
+.phone-real>img { position:relative; z-index:1; width:100%; height:100%; display:block; object-fit:cover; object-position:top center; border-radius:29px; }
 .phone-screen { height:100%; border-radius:30px; padding:52px 20px 20px; background:linear-gradient(#13293a,#07131e); overflow:hidden; }
 .app-top { display:flex; align-items:center; gap:10px; font-size:10px; margin-bottom:35px; }
 .app-top img { filter:brightness(0) invert(1); }
@@ -219,8 +220,9 @@ footer>div { display:flex; gap:22px; align-items:center; }
 .rize-app-detail-copy>p:not(.section-kicker) { color:rgba(255,255,255,.7); line-height:1.75; max-width:530px; }
 .rize-app-detail ul { list-style:none; padding:0; margin:30px 0 0; display:grid; gap:13px; color:#dce9f7; }
 .rize-app-detail li:before { content:"✓"; color:var(--cyan); font-weight:900; margin-right:12px; }
-.rize-app-shot { height:560px; border:6px solid #294967; border-radius:40px; overflow:hidden; box-shadow:0 28px 65px #0007; transform:rotate(2deg); }
-.rize-app-shot img { width:100%; height:100%; display:block; object-fit:cover; object-position:top center; }
+.rize-app-shot { height:560px; padding:8px; border:7px solid #294967; border-radius:40px; overflow:hidden; background:#172b3c; box-shadow:0 28px 65px #0007; transform:rotate(2deg); position:relative; }
+.rize-app-shot:before { content:""; position:absolute; z-index:3; top:13px; left:50%; width:92px; height:22px; transform:translateX(-50%); border-radius:14px; background:#07111e; }
+.rize-app-shot img { width:100%; height:100%; display:block; object-fit:cover; object-position:top center; border-radius:27px; }
 .rize-footer .rize-brand { margin:0; }
 .rize-footer .rize-brand img { filter:none; }
 .rize-footer .rize-brand span { color:#0876b8; font-size:23px; }
