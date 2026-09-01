@@ -29,8 +29,8 @@ jobs:
       - name: Abhängigkeiten installieren
         run: npm ci
 
-      - name: Website bauen
-        run: npm run build
+      - name: Website für Firebase bauen
+        run: npm run build:firebase
 
       - name: Firebase-Zugangsdaten vorbereiten
         env:
@@ -43,4 +43,4 @@ jobs:
       - name: Auf Firebase Hosting veröffentlichen
         env:
           GOOGLE_APPLICATION_CREDENTIALS: ${{ runner.temp }}/firebase-service-account.json
-        run: npx --yes firebase-tools@latest deploy --only hosting,functions --project cf-website-24f52 --non-interactive
+        run: npx --yes firebase-tools@latest deploy --only hosting --project cf-website-24f52 --non-interactive

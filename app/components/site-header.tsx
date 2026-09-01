@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "./site-link";
 
 export function SiteHeader({ inverse = false }: { inverse?: boolean }) {
   return <header className={`nav site-nav${inverse ? " site-nav-inverse" : ""}`}>
