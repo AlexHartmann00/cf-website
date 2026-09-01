@@ -58,7 +58,7 @@ export default function Home() {
         </div>
         <div className="hero-visual">
           <div className="hero-image">
-            <img className="fill-image" src="/assets/florian-pole.jpg" alt="Coach Flo beim Human Flag am See" />
+            <img className="fill-image hero-portrait" src="/assets/flo-portrait.png" alt="Florian Ströhla – Coach Flo" />
           </div>
           <div className="floating-card">
             <span className="pulse" />
@@ -69,9 +69,14 @@ export default function Home() {
       </section>
 
       <section className="statement">
-        <p className="section-kicker">Meine Haltung</p>
-        <h2>Bewegung darf sich gut anfühlen.</h2>
-        <p>Es geht nicht darum, einem Ideal hinterherzulaufen. Es geht darum, deinen Körper besser kennenzulernen und etwas zu finden, das langfristig zu dir passt.</p>
+        <div className="statement-photo"><img className="fill-image" src="/assets/flo-obstacle-run.jpg" alt="Flo nach einem Hindernislauf" /></div>
+        <div className="statement-copy">
+          <p className="section-kicker">Meine Haltung</p>
+          <h2>Bewegung darf sich gut anfühlen.</h2>
+          <p>Ich weiß aus eigener Erfahrung, dass Training nicht immer leicht beginnt. Rückenschmerzen haben mich damals überhaupt erst dazu gebracht, mich ernsthaft mit Bewegung zu beschäftigen.</p>
+          <p>Heute geht es mir nicht darum, dass du einem Ideal hinterherläufst. Ich möchte dir helfen, deinen Körper besser kennenzulernen und etwas zu finden, das langfristig zu dir passt.</p>
+          <span className="statement-signature">– Flo</span>
+        </div>
       </section>
 
       <section className="about" id="ueber-mich">

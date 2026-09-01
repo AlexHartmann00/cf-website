@@ -465,3 +465,28 @@ footer { font-size:12px; }
   .hero { padding-top:35px; }
   .hero-visual { height:420px; }
 }
+
+/* A denser, more personal Coach Flo introduction */
+.hero { min-height:590px; padding-top:30px; padding-bottom:55px; }
+.hero-image .hero-portrait { object-position:center 20%; }
+.statement { max-width:none; min-height:500px; padding:0; display:grid; grid-template-columns:minmax(360px,.9fr) minmax(520px,1.1fr); text-align:left; background:var(--navy); }
+.statement-photo,.statement-copy { position:relative; z-index:1; }
+.statement-photo { min-height:500px; overflow:hidden; }
+.statement-photo img { object-position:center; filter:saturate(.8) contrast(1.04); }
+.statement-photo:after { content:""; position:absolute; inset:0; background:linear-gradient(90deg,transparent 58%,var(--navy)); }
+.statement-copy { padding:75px max(45px,calc((100vw - 1220px)/2)) 70px 75px; align-self:center; }
+.statement .section-kicker { justify-content:flex-start; color:var(--cyan); }
+.statement-copy>p:not(.section-kicker) { color:rgba(255,255,255,.72); max-width:600px; line-height:1.75; margin-bottom:14px; }
+.statement-signature { display:block; margin-top:25px; color:#fff; font-size:13px; font-weight:700; font-style:italic; }
+
+@media (max-width:900px) {
+  .statement { grid-template-columns:1fr; }
+  .statement-photo { min-height:380px; }
+  .statement-photo:after { background:linear-gradient(0deg,var(--navy),transparent 45%); }
+  .statement-copy { padding:50px 30px 70px; }
+}
+
+@media (max-width:560px) {
+  .hero-image .hero-portrait { object-position:center 15%; }
+  .statement-photo { min-height:300px; }
+}
