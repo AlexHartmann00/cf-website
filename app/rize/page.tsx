@@ -42,21 +42,11 @@ export default function RizePage() {
           <p className="cta-note">Für iPhone und Android · Kostenlos starten</p>
         </div>
         <div className="phone-stage" aria-label="Vorschau der RIZE-App">
-          <div className="phone phone-back">
-            <div className="phone-screen analytics-screen">
-              <small>Deine Woche</small>
-              <h3>4 Workouts</h3>
-              <div className="chart"><i /><i /><i /><i /><i /><i /><i /></div>
-              <p>Starke Woche! <b>+12%</b></p>
-            </div>
+          <div className="phone phone-back phone-real">
+            <img src="/assets/rize-progress.png" alt="RIZE-Fortschrittsansicht mit Trainingsserie, Level und Aktivitätswerten" />
           </div>
-          <div className="phone phone-front">
-            <div className="phone-screen">
-              <div className="app-top"><img src="/assets/rize-logo.png" alt="" width="34" height="34" /><span>Guten Morgen, Flo</span></div>
-              <small>HEUTIGES TRAINING</small>
-              <div className="workout-card"><span>DEINE TAGESAUFGABE</span><h3>Build your<br />Momentum.</h3><button>Aufgabe starten →</button></div>
-              <div className="mini-stats"><div><b>12</b><small>Einheiten</small></div><div><b>7</b><small>Tage Serie</small></div><div><b>82%</b><small>Level</small></div></div>
-            </div>
+          <div className="phone phone-front phone-real">
+            <img src="/assets/rize-home.png" alt="RIZE-Startseite mit persönlicher Tagesaufgabe" />
           </div>
         </div>
       </section>
@@ -72,6 +62,18 @@ export default function RizePage() {
         </div>
         <div className="feature-grid">
           {features.map(([title, text, icon]) => <article key={title}><span>{icon}</span><h3>{title}</h3><p>{text}</p></article>)}
+        </div>
+      </section>
+
+      <section className="rize-app-detail">
+        <div className="rize-app-detail-copy">
+          <p className="section-kicker">Direkt in der Übung</p>
+          <h2>Klare Anleitung, ohne Umwege.</h2>
+          <p>RIZE führt dich durch deine Aufgabe, zählt die Zeit mit und zeigt dir die Bewegung direkt in der App. So weißt du während des Trainings, was als Nächstes kommt.</p>
+          <ul><li>Passende Dauer und Intensität</li><li>Video direkt bei der Übung</li><li>Fortschritt automatisch festhalten</li></ul>
+        </div>
+        <div className="rize-app-shot">
+          <img src="/assets/rize-workout.png" alt="Geführte RIZE-Übung mit Timer, Startschaltfläche und Bewegungsvideo" />
         </div>
       </section>
 
