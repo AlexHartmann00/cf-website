@@ -1,0 +1,37 @@
+{
+  "functions": {
+    "source": ".",
+    "runtime": "nodejs22",
+    "ignore": [
+      ".git",
+      ".github",
+      ".openai",
+      ".vinext",
+      ".wrangler",
+      "app",
+      "build",
+      "db",
+      "drizzle",
+      "examples",
+      "node_modules",
+      "public",
+      "tests",
+      "dist/client"
+    ]
+  },
+  "hosting": {
+    "public": "dist/client",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "rewrites": [
+      {
+        "source": "**",
+        "function": {
+          "functionId": "ssr",
+          "region": "europe-west1"
+        }
+      }
+    ]
+  }
+}
