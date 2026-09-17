@@ -43,8 +43,8 @@ export default function WorkoutsPage() {
 
       <section className="workout-rize-bridge">
         <img src="/assets/rize-logo.png" alt="RIZE" width="110" height="110" />
-        <div><p className="section-kicker">Lieber flexibel?</p><h2>Deine Tagesaufgabe wartet in RIZE.</h2><p>Trainiere unabhängig von festen Uhrzeiten mit einer Aufgabe, die zu deinem Level passt.</p></div>
-        <Link className="button" href="/rize">RIZE-App ansehen <span>↗</span></Link>
+        <div><p className="section-kicker">Coming soon</p><h2>RIZE ist noch in Entwicklung.</h2><p>Flo arbeitet an einer App für flexible Tagesaufgaben. Einen ersten Einblick gibt es schon jetzt.</p></div>
+        <Link className="button" href="/rize">Einblick ansehen <span>↗</span></Link>
       </section>
 
       <section className="contact workout-contact">

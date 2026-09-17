@@ -5,16 +5,16 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://cf-website-24f52.web.app"),
   icons: { icon: [{ url: "/assets/coach-flo-logo.png", type: "image/png" }] },
   title: { default: "Coach Flo | Personal Training", template: "%s | Coach Flo" },
-  description: "Individuelles Personal Training, Ernährungsberatung und die RIZE-Coaching-App mit Florian Ströhla in Bad Steben.",
+  description: "Individuelles Personal Training und Ernährungsberatung mit Florian Ströhla in Bad Steben. Die RIZE-App ist noch in Entwicklung.",
   openGraph: {
     title: "Coach Flo | Dein Körper kann mehr.",
-    description: "Personal Training und die RIZE-Coaching-App.",
+    description: "Personal Training mit Coach Flo. Die RIZE-App ist noch in Entwicklung.",
     images: [{ url: "/og.png", width: 1200, height: 630, alt: "Coach Flo und die RIZE-App" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Coach Flo | Dein Körper kann mehr.",
-    description: "Personal Training und die RIZE-Coaching-App.",
+    description: "Personal Training mit Coach Flo. Die RIZE-App ist noch in Entwicklung.",
     images: ["/og.png"],
   },
 };

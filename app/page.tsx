@@ -141,10 +141,10 @@ export default function Home() {
           <img src="/assets/rize-logo.png" alt="RIZE" width="220" height="220" />
         </div>
         <div>
-          <p className="section-kicker light">Die RIZE-App</p>
+          <p className="section-kicker light">RIZE-App · Coming soon</p>
           <h2>Training für deinen Alltag.</h2>
-          <p>RIZE gibt dir eine passende Tagesaufgabe, zeigt Übungen verständlich und hält deinen Verlauf fest. Ohne unnötigen Druck.</p>
-          <div className="rize-teaser-actions"><Link className="button button-light" href="/rize">RIZE-App ansehen <span>↗</span></Link><a className="teaser-mail-link" href="/rize#download">App herunterladen</a></div>
+          <p>Flo entwickelt gerade RIZE: eine App mit passenden Tagesaufgaben, verständlich erklärten Übungen und einem Überblick über deinen Fortschritt. Noch ist sie nicht veröffentlicht.</p>
+          <div className="rize-teaser-actions"><Link className="button button-light" href="/rize">Ersten Einblick ansehen <span>↗</span></Link></div>
         </div>
       </section>
 
@@ -153,7 +153,7 @@ export default function Home() {
         <div className="choice-grid">
           <a href="#coaching"><small>Maximal persönlich</small><strong>1:1 Coaching</strong><span>Mehr über das Coaching →</span></a>
           <Link href="/workouts"><small>Gemeinsam motiviert</small><strong>Live Workouts</strong><span>Formate & Termine ansehen →</span></Link>
-          <Link href="/rize"><small>Flexibel im Alltag</small><strong>RIZE-App</strong><span>App-Funktionen entdecken →</span></Link>
+          <Link href="/rize"><small>Coming soon</small><strong>RIZE-App</strong><span>Mehr über die App erfahren →</span></Link>
         </div>
       </section>
 

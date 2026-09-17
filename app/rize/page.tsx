@@ -1,6 +1,11 @@
-import Link from "../components/site-link";
+import type { Metadata } from "next";
 import { SiteHeader } from "../components/site-header";
 import { SiteFooter } from "../components/site-footer";
+
+export const metadata: Metadata = {
+  title: "RIZE-App – Coming soon",
+  description: "RIZE ist noch in Entwicklung. Hier bekommst du einen ersten Einblick in die Trainings-App von Coach Flo.",
+};
 
 const features = [
   ["Deine Tagesaufgabe", "RIZE kombiniert Übung, Intensität und Umfang passend zu deinem persönlichen Level.", "▰"],
@@ -8,16 +13,6 @@ const features = [
   ["Workout-Bibliothek", "Finde Übungen über Suche und Muskelgruppen – inklusive Details und Video-Erklärungen.", "◎"],
   ["Dein Muskelfokus", "Richte Tagesaufgaben auf gewünschte Muskelgruppen aus und schließe unpassende Übungen aus.", "✦"],
 ];
-
-const appStoreUrl = "#download";
-const googlePlayUrl = "#download";
-
-function StoreButtons({ light = false }: { light?: boolean }) {
-  return <div className={`store-buttons${light ? " store-buttons-light" : ""}`} aria-label="RIZE herunterladen">
-    <a className="store-badge-link apple-badge-link" href={appStoreUrl} aria-label="RIZE im App Store – Link folgt"><img src="/assets/download-app-store.svg" alt="Laden im App Store" /></a>
-    <a className="store-badge-link google-badge-link" href={googlePlayUrl} aria-label="RIZE bei Google Play – Link folgt"><img src="/assets/google-play-badge.png" alt="Jetzt bei Google Play" /></a>
-  </div>;
-}
 
 export default function RizePage() {
   return (
@@ -32,16 +27,15 @@ export default function RizePage() {
             <img src="/assets/rize-logo.png" alt="RIZE Logo" width="100" height="100" />
             <span>RIZE</span>
           </div>
-          <p className="eyebrow"><span /> Training, das in deinen Tag passt.</p>
-          <h1>Deine Aufgabe für heute.</h1>
-          <p className="lead">RIZE schlägt dir eine passende Übung vor, erklärt sie verständlich und hält fest, was du geschafft hast. Einfach öffnen und loslegen.</p>
+          <p className="eyebrow"><span /> Coming soon · Die RIZE-App ist noch in Entwicklung</p>
+          <h1>Training, das bald in deinen Tag passt.</h1>
+          <p className="lead">Mit RIZE entwickelt Flo eine App für persönliche Tagesaufgaben, verständlich erklärte Übungen und einen Überblick über deinen Fortschritt. Hier siehst du schon jetzt, woran wir arbeiten.</p>
           <div className="hero-actions">
-            <a className="button" href="#download">App herunterladen <span>↓</span></a>
-            <a className="text-link" href="#features">Features ansehen <span>↓</span></a>
+            <a className="text-link" href="#features">Ersten Einblick ansehen <span>↓</span></a>
           </div>
-          <p className="cta-note">Für iPhone und Android · Kostenlos starten</p>
+          <p className="cta-note">Noch nicht im App Store oder bei Google Play erhältlich.</p>
         </div>
-        <div className="phone-stage" aria-label="Vorschau der RIZE-App">
+        <div className="phone-stage" aria-label="Vorschau der RIZE-App aus der Entwicklung">
           <div className="phone phone-back phone-real">
             <img src="/assets/rize-progress.png" alt="RIZE-Fortschrittsansicht mit Trainingsserie, Level und Aktivitätswerten" />
           </div>
@@ -58,7 +52,7 @@ export default function RizePage() {
       <section className="rize-features" id="features">
         <div className="section-head">
           <div><p className="section-kicker">Das steckt in RIZE</p><h2>Übersichtlich und leicht zu nutzen.</h2></div>
-          <p>Du bekommst einen machbaren Impuls für deinen Tag und kannst deinen Verlauf verfolgen – ohne komplizierte Planung.</p>
+          <p>Geplant sind machbare Trainingsimpulse für deinen Tag und ein klarer Überblick über deinen Verlauf – ohne komplizierte Planung.</p>
         </div>
         <div className="feature-grid">
           {features.map(([title, text, icon]) => <article key={title}><span>{icon}</span><h3>{title}</h3><p>{text}</p></article>)}
@@ -77,23 +71,11 @@ export default function RizePage() {
         </div>
       </section>
 
-      <section className="rize-model">
-        <div>
-          <p className="section-kicker light">Kostenlos starten</p>
-          <h2>Erst ausprobieren, dann entscheiden.</h2>
-        </div>
-        <div className="model-options">
-          <article><small>RIZE</small><strong>Kostenlos</strong><p>Persönliche Tagesaufgabe, Basis-Workoutauswahl und sichtbare Trainingsserie.</p></article>
-          <article className="model-pro"><small>RIZE PRO</small><strong>Ab 3,99 € <em>/ Monat</em></strong><p>Vollständige Übungsbibliothek, Muskelfokus sowie erweiterte Verlaufskurven und Aktivitätskalender.</p></article>
-        </div>
-      </section>
-
-      <section className="rize-cta" id="start">
+      <section className="rize-cta" id="coming-soon">
         <img src="/assets/rize-logo.png" alt="" width="130" height="130" />
-        <p className="section-kicker light">RIZE herunterladen</p>
-        <h2>Probier RIZE in Ruhe aus.</h2>
-        <p>Die App ist kostenlos für iPhone und Android verfügbar.</p>
-        <div id="download"><StoreButtons light /></div>
+        <p className="section-kicker light">Coming soon</p>
+        <h2>RIZE braucht noch etwas Zeit.</h2>
+        <p>Die App ist noch nicht veröffentlicht. Sobald sie verfügbar ist, findest du die offiziellen Store-Links hier.</p>
       </section>
 
       <SiteFooter />
