@@ -2,7 +2,7 @@ import Link from "../components/site-link";
 import { SiteHeader } from "../components/site-header";
 import { SiteFooter } from "../components/site-footer";
 
-const calUrl = process.env.NEXT_PUBLIC_CAL_BOOKING_URL ?? "https://cal.com/coachflotest/erstgesprach-individuelles-coaching?embed=1&theme=light";
+const calUrl = process.env.NEXT_PUBLIC_CAL_BOOKING_URL ?? "https://cal.com/coachflo/erstgesprach-individuelles-coaching?embed=1&theme=light";
 
 const packages = [
   ["Startklar", "149 €", "Anamnese, Fitness-Check und eine Personal-Training-Einheit"],
