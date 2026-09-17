@@ -46,10 +46,8 @@ export default function Home() {
             wirklich hilft – beim Training, bei der Ernährung und im Alltag.
           </p>
           <div className="hero-actions">
-            <Link className="button" href="/termin">Kostenloses Erstgespräch buchen <span>↗</span></Link>
-            <a className="text-link" href="#coaching">Coaching entdecken <span>↓</span></a>
+            <a className="text-link" href="#coaching">Coaching ansehen <span>↓</span></a>
           </div>
-          <p className="cta-note home-note">Persönliches Gespräch · Ohne Verpflichtung · Auf Augenhöhe</p>
           <div className="hero-stats">
             <div><strong>1:1</strong><span>individuelles Coaching</span></div>
             <div><strong>Ganzheitlich</strong><span>Training & Ernährung</span></div>
@@ -92,7 +90,6 @@ export default function Home() {
           <div className="qualification-list" aria-label="Auswahl der Qualifikationen">
             <span>Personal Trainer</span><span>Sporttherapeut</span><span>FMS Experte</span><span>Functional Nutrition Coach</span><span>Mobility Trainer</span>
           </div>
-          <Link className="text-link" href="/termin">Flo kennenlernen <span>↗</span></Link>
         </div>
       </section>
 
@@ -154,7 +151,7 @@ export default function Home() {
       <section className="choice-section">
         <div className="choice-intro"><p className="section-kicker">Was passt zu dir?</p><h2>Verschiedene Wege, persönlich begleitet.</h2><p>Du musst noch nicht wissen, welches Format das richtige ist. Schau dich in Ruhe um – oder wir sprechen kurz darüber.</p></div>
         <div className="choice-grid">
-          <Link href="/termin"><small>Maximal persönlich</small><strong>1:1 Coaching</strong><span>Kostenloses Gespräch buchen →</span></Link>
+          <a href="#coaching"><small>Maximal persönlich</small><strong>1:1 Coaching</strong><span>Mehr über das Coaching →</span></a>
           <Link href="/workouts"><small>Gemeinsam motiviert</small><strong>Live Workouts</strong><span>Formate & Termine ansehen →</span></Link>
           <Link href="/rize"><small>Flexibel im Alltag</small><strong>RIZE-App</strong><span>App-Funktionen entdecken →</span></Link>
         </div>
@@ -165,10 +162,9 @@ export default function Home() {
         <h2>Lass uns in Ruhe darüber sprechen.</h2>
         <p>Erzähl mir, wo du gerade stehst. Ich höre zu, beantworte deine Fragen und sage dir ehrlich, ob und wie ich dich unterstützen kann.</p>
         <div className="contact-actions">
-          <Link className="button" href="/termin">Freien Termin wählen <span>↗</span></Link>
+          <a className="text-link dark" href="mailto:info@coach-flo.de">info@coach-flo.de</a>
           <a className="text-link dark" href="tel:+4915563125361">0155 63125361</a>
         </div>
-        <p className="contact-note">Kein Verkaufsgespräch. Einfach ein ehrlicher erster Austausch.</p>
       </section>
 
       <SiteFooter />
