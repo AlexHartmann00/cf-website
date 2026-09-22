@@ -35,13 +35,8 @@ export default function RizePage() {
           </div>
           <p className="cta-note">Noch nicht im App Store oder bei Google Play erhältlich.</p>
         </div>
-        <div className="phone-stage" aria-label="Vorschau der RIZE-App aus der Entwicklung">
-          <div className="phone phone-back phone-real">
-            <img src="/assets/rize-progress.png" alt="RIZE-Fortschrittsansicht mit Trainingsserie, Level und Aktivitätswerten" />
-          </div>
-          <div className="phone phone-front phone-real">
-            <img src="/assets/rize-home.png" alt="RIZE-Startseite mit persönlicher Tagesaufgabe" />
-          </div>
+        <div className="rize-hero-visual">
+          <img src="/assets/rize-hero.png" alt="Vorschau der RIZE-App mit Tagesaufgabe, Übungsansicht und Trainingstimer" />
         </div>
       </section>
 

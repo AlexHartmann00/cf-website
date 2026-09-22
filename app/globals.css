@@ -25,6 +25,7 @@ main { overflow:hidden; }
 .nav nav { display:flex; gap:36px; font-size:13px; font-weight:700; }
 .nav nav a { transition:.2s; }
 .nav nav a:hover { color:var(--blue); }
+.mobile-menu { display:none; }
 .button { display:inline-flex; align-items:center; justify-content:center; gap:26px; background:var(--blue); color:white; padding:17px 22px; border-radius:4px; font-size:13px; font-weight:800; letter-spacing:.01em; transition:.25s; }
 .button:hover { background:var(--blue-dark); transform:translateY(-2px); }
 .button-small { padding:12px 18px; }
@@ -147,6 +148,8 @@ footer>div { display:flex; gap:22px; align-items:center; }
 .rize-hero h1 { font-size:clamp(72px,7.4vw,110px); }
 .rize-hero .lead { color:#a9bac6; }
 .rize-hero .text-link { color:white; }
+.rize-hero-visual { position:relative; z-index:2; overflow:hidden; border-radius:32px; box-shadow:0 32px 80px #001a4a66; }
+.rize-hero-visual img { display:block; width:100%; height:auto; aspect-ratio:3/2; object-fit:cover; }
 .cta-note { margin-top:18px; color:#7f96a6; font-size:9px; text-transform:uppercase; letter-spacing:.09em; }
 .store-buttons { display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
 .store-buttons>a { transition:.2s; }
@@ -489,4 +492,90 @@ footer { font-size:12px; }
 @media (max-width:560px) {
   .hero-image .hero-portrait { object-position:center 15%; }
   .statement-photo { min-height:300px; }
+}
+
+/* Mobile navigation and responsive polish */
+@media (max-width:900px) {
+  .nav { position:relative; z-index:50; }
+  .site-nav-inverse { position:absolute; }
+  .nav>.desktop-nav,.nav>.desktop-cta { display:none; }
+  .mobile-menu { display:block; position:relative; }
+  .mobile-menu summary { width:46px; height:46px; border:1px solid var(--line); border-radius:14px; background:#fff; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:5px; cursor:pointer; list-style:none; box-shadow:0 10px 25px #102f5514; }
+  .mobile-menu summary::-webkit-details-marker { display:none; }
+  .mobile-menu summary span { width:20px; height:2px; border-radius:2px; background:var(--ink); transition:.2s; }
+  .mobile-menu[open] summary span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
+  .mobile-menu[open] summary span:nth-child(2) { opacity:0; }
+  .mobile-menu[open] summary span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
+  .mobile-menu nav { position:absolute; top:56px; right:0; width:min(320px,calc(100vw - 40px)); padding:14px; border:1px solid var(--line); border-radius:20px; background:#fff; color:var(--ink); box-shadow:0 24px 60px #102f5530; display:grid; gap:3px; }
+  .mobile-menu nav>a:not(.button) { padding:13px 14px; border-radius:10px; font-size:16px; font-weight:700; }
+  .mobile-menu nav>a:not(.button):hover { background:var(--ice); }
+  .mobile-menu .button { margin-top:7px; width:100%; }
+  .site-nav-inverse .mobile-menu summary { background:#ffffff14; border-color:#ffffff45; box-shadow:none; }
+  .site-nav-inverse .mobile-menu summary span { background:#fff; }
+  .site-nav-inverse .mobile-menu nav { background:#102F55; color:#fff; border-color:#ffffff20; }
+  .site-nav-inverse .mobile-menu nav>a:not(.button):hover { background:#ffffff10; }
+  .site-nav-inverse .mobile-menu .button { background:#fff; color:var(--blue-dark); }
+
+  .rize-hero { grid-template-columns:1fr; gap:44px; padding:115px 28px 64px; }
+  .rize-hero-visual { width:100%; max-width:720px; margin:0 auto; border-radius:24px; }
+  .rize-hero-visual img { aspect-ratio:3/2; }
+}
+
+@media (max-width:560px) {
+  body { font-size:16px; }
+  .nav { height:70px; padding:0 16px; }
+  .nav .brand img { width:42px; height:30px; }
+  .mobile-menu nav { width:calc(100vw - 32px); right:0; }
+
+  .hero { padding:34px 18px 58px; gap:28px; }
+  .hero-copy { min-width:0; }
+  .hero-actions { margin-top:24px; width:100%; }
+  .hero-actions .button { width:100%; }
+  .hero-stats { grid-template-columns:1fr; gap:12px; margin-top:34px; }
+  .hero-stats div { min-width:0; padding:11px 0 11px 16px; }
+  .hero-stats strong { font-size:16px; }
+  .hero-stats span { font-size:12px; }
+  .hero-visual { height:440px; }
+  .floating-card { left:12px; right:12px; bottom:18px; padding:14px 16px; }
+
+  .statement-copy,.process-intro,.process-list { padding-left:20px; padding-right:20px; }
+  .about-copy>p:not(.section-kicker),.service-card p,.feature-grid p,.process-list p,.section-head>p,.choice-intro>p:not(.section-kicker),.workout-formats article>p:not(.section-kicker),.legal-content section p { font-size:16px; }
+  .about-visual { min-height:440px; }
+  .about-badge { left:16px; right:16px; bottom:20px; }
+  .service-card,.feature-grid article { padding:26px 22px; }
+  .process-list article { grid-template-columns:42px 1fr; gap:12px; }
+  .workout-teaser-art strong { font-size:64px; }
+  .rize-teaser { padding:65px 20px; }
+  .choice-grid>a { padding:22px; }
+  .contact { padding:75px 20px; }
+
+  .rize-hero { min-height:auto; padding:100px 18px 52px; gap:34px; }
+  .rize-hero .eyebrow { line-height:1.45; align-items:flex-start; }
+  .rize-brand img { width:72px; height:72px; }
+  .rize-hero-visual { border-radius:18px; box-shadow:0 22px 50px #001a4a55; }
+  .rize-proof { font-size:11px; gap:9px; }
+  .rize-features { padding-top:68px; padding-bottom:68px; }
+  .rize-app-detail-copy>p:not(.section-kicker) { font-size:16px; }
+  .rize-cta { padding:80px 20px; }
+
+  .workouts-hero { min-height:620px; padding:110px 20px 65px; }
+  .workout-formats { padding:65px 18px; }
+  .workout-formats article { min-height:auto; padding:28px 22px; }
+  .schedule-grid { grid-template-columns:1fr; }
+  .schedule-grid div+div { border-left:0; border-top:1px solid var(--line); }
+  .workout-rize-bridge { margin-left:18px; margin-right:18px; }
+
+  .booking-intro { padding:52px 18px 36px; }
+  .booking-intro>div:last-child>p { font-size:16px; }
+  .booking-intro ul { font-size:14px; }
+  .booking-shell { min-height:720px; margin:0 12px 68px; padding:4px; border-radius:14px; }
+  .booking-shell iframe { min-height:710px; }
+  .booking-prices { padding-left:18px; padding-right:18px; }
+  .package-grid article { padding:26px 22px; }
+  .price-footnote { font-size:12px; line-height:1.55; }
+
+  .legal-content { padding:52px 20px 85px; }
+  .legal-content h1 { margin-bottom:38px; }
+  footer { padding:34px 20px; }
+  footer>div { gap:14px 18px; }
 }
