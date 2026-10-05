@@ -67,7 +67,7 @@ export default function Home() {
       </section>
 
       <section className="statement">
-        <div className="statement-photo"><img className="fill-image" src="/assets/flo-obstacle-run.jpg" alt="Flo nach einem Hindernislauf" /></div>
+        <div className="statement-photo"><img className="fill-image" loading="lazy" decoding="async" src="/assets/flo-obstacle-run.jpg" alt="Flo nach einem Hindernislauf" /></div>
         <div className="statement-copy">
           <p className="section-kicker">Meine Haltung</p>
           <h2>Bewegung darf sich gut anfühlen.</h2>
@@ -79,7 +79,7 @@ export default function Home() {
 
       <section className="about" id="ueber-mich">
         <div className="about-visual">
-          <img className="fill-image" src="/assets/florian-pole.jpg" alt="Florian Ströhla beim Calisthenics-Training" />
+          <img className="fill-image" loading="lazy" decoding="async" src="/assets/florian-pole-web.jpg" alt="Florian Ströhla beim Calisthenics-Training" />
           <div className="about-badge"><strong>Mehr als Training</strong><span>Bewegung · Ernährung · Regeneration</span></div>
         </div>
         <div className="about-copy">
@@ -138,7 +138,7 @@ export default function Home() {
 
       <section className="rize-teaser">
         <div className="rize-logo-wrap">
-          <img src="/assets/rize-logo.png" alt="RIZE" width="220" height="220" />
+          <img src="/assets/rize-logo-web.png" alt="RIZE" width="220" height="220" />
         </div>
         <div>
           <p className="section-kicker light">RIZE-App · Coming soon</p>
@@ -162,6 +162,7 @@ export default function Home() {
         <h2>Lass uns in Ruhe darüber sprechen.</h2>
         <p>Erzähl mir, wo du gerade stehst. Ich höre zu, beantworte deine Fragen und sage dir ehrlich, ob und wie ich dich unterstützen kann.</p>
         <div className="contact-actions">
+          <Link className="button" href="/termin">Termin anfragen <span>↗</span></Link>
           <a className="text-link dark" href="mailto:info@coach-flo.de">info@coach-flo.de</a>
           <a className="text-link dark" href="tel:+4915563125361">0155 63125361</a>
         </div>

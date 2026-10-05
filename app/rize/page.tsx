@@ -24,7 +24,7 @@ export default function RizePage() {
         <div className="rize-orb orb-two" />
         <div className="rize-hero-copy">
           <div className="rize-brand">
-            <img src="/assets/rize-logo.png" alt="RIZE Logo" width="100" height="100" />
+            <img src="/assets/rize-logo-web.png" alt="RIZE Logo" width="100" height="100" />
             <span>RIZE</span>
           </div>
           <p className="eyebrow"><span /> Coming soon · Die RIZE-App ist noch in Entwicklung</p>
@@ -62,12 +62,12 @@ export default function RizePage() {
           <ul><li>Passende Dauer und Intensität</li><li>Video direkt bei der Übung</li><li>Fortschritt automatisch festhalten</li></ul>
         </div>
         <div className="rize-app-shot">
-          <img src="/assets/rize-workout.png" alt="Geführte RIZE-Übung mit Timer, Startschaltfläche und Bewegungsvideo" />
+          <img loading="lazy" decoding="async" src="/assets/rize-workout-web.png" alt="Geführte RIZE-Übung mit Timer, Startschaltfläche und Bewegungsvideo" />
         </div>
       </section>
 
       <section className="rize-cta" id="coming-soon">
-        <img src="/assets/rize-logo.png" alt="" width="130" height="130" />
+        <img src="/assets/rize-logo-web.png" alt="" width="130" height="130" />
         <p className="section-kicker light">Coming soon</p>
         <h2>RIZE braucht noch etwas Zeit.</h2>
         <p>Die App ist noch nicht veröffentlicht. Sobald sie verfügbar ist, findest du die offiziellen Store-Links hier.</p>

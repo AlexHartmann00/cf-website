@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://cf-website-24f52.web.app"),
-  icons: { icon: [{ url: "/assets/coach-flo-logo.png", type: "image/png" }] },
+  icons: { icon: [{ url: "/assets/coach-flo-logo-web.png", type: "image/png" }] },
   title: { default: "Coach Flo | Personal Training", template: "%s | Coach Flo" },
   description: "Individuelles Personal Training und Ernährungsberatung mit Florian Ströhla in Bad Steben. Die RIZE-App ist noch in Entwicklung.",
   openGraph: {

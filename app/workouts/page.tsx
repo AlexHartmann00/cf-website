@@ -8,7 +8,7 @@ export default function WorkoutsPage() {
       <SiteHeader inverse />
 
       <section className="workouts-hero">
-        <img className="fill-image" src="/assets/coach-flo-banner.jpg" alt="Coach Flo – Fitness, Gesundheit und Lifestyle" />
+        <img className="fill-image" src="/assets/coach-flo-banner-web.jpg" alt="Coach Flo – Fitness, Gesundheit und Lifestyle" />
         <div className="workouts-hero-overlay" />
         <div className="workouts-hero-copy">
           <p className="eyebrow"><span /> Live · Online · Im Team</p>
@@ -42,7 +42,7 @@ export default function WorkoutsPage() {
       </section>
 
       <section className="workout-rize-bridge">
-        <img src="/assets/rize-logo.png" alt="RIZE" width="110" height="110" />
+        <img src="/assets/rize-logo-web.png" alt="RIZE" width="110" height="110" />
         <div><p className="section-kicker">Coming soon</p><h2>RIZE ist noch in Entwicklung.</h2><p>Flo arbeitet an einer App für flexible Tagesaufgaben. Einen ersten Einblick gibt es schon jetzt.</p></div>
         <Link className="button" href="/rize">Einblick ansehen <span>↗</span></Link>
       </section>
