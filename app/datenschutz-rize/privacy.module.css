@@ -46,3 +46,6 @@
 }
 
 .document h1, .document h2 { text-transform: none; font-weight: 700; line-height: 1.25; }
+
+.document h3 { margin: 24px 0 12px; font-size: 18px; font-weight: 700; }
+.document a { color: var(--blue-dark); text-decoration: underline; }
