@@ -62,7 +62,7 @@ export default function RizePage() {
           <ul><li>Passende Dauer und Intensität</li><li>Video direkt bei der Übung</li><li>Fortschritt automatisch festhalten</li></ul>
         </div>
         <div className="rize-app-shot">
-          <img loading="lazy" decoding="async" src="/assets/rize-workout-web.png" alt="Geführte RIZE-Übung mit Timer, Startschaltfläche und Bewegungsvideo" />
+          <img loading="lazy" decoding="async" src="/assets/rize-workout-wall-sit.png" alt="Geführte RIZE-Übung mit Timer, Startschaltfläche und Bewegungsvideo" />
         </div>
       </section>
 
