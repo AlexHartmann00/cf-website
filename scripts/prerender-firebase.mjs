@@ -2,7 +2,7 @@ import { cp, mkdir, rm, writeFile } from "node:fs/promises";
 import worker from "../dist/server/index.js";
 
 const outputDirectory = new URL("../firebase-dist/", import.meta.url);
-const routes = ["/", "/rize", "/workouts", "/termin", "/impressum", "/datenschutz", "/datenschutz-rize", "/agb-rize"];
+const routes = ["/", "/rize", "/workouts", "/termin", "/impressum", "/datenschutz", "/datenschutz-rize", "/agb-rize", "/konto-loeschen"];
 
 await rm(outputDirectory, { recursive: true, force: true });
 await mkdir(outputDirectory, { recursive: true });
